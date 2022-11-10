@@ -1,0 +1,289 @@
+/* import google font */
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap');
+:root {
+    --green: #189a46;
+    --bg-color: #fff;
+    --slider-bg-color: #0c0c0c;
+    --about-us: #f53626;
+    --black-title: #000c04;
+    --text: #696969;
+    --border-radius: 10px;
+    --bg-light: rgba(147, 107, 232, 0.05);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+}
+html {
+    overflow-x: hidden;
+}
+body {
+    overflow-x: hidden;
+}
+/* Start header */
+header {
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 90px;
+    box-shadow: 0 3px 9px rgb(0 0 0 / 5%);
+    align-items: center;
+    background-color: var(--bg-color);
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+}
+header .container .logo h1{
+    color: var(--green);
+    font-size: 36px;
+    font-weight: bolder;
+}
+header .container .navigation {
+    display: flex;
+    justify-content: space-between;
+}
+header .container .navigation > div{
+    padding: 0 10px;
+}
+header .container .navigation div a {
+    text-decoration: none;
+    color: black;
+    font-size: 19.2px;
+    display: block;
+    position: relative;
+}
+header .container .navigation div a:hover {
+    color: var(--green);
+    transition: all 0.4s linear;
+}
+header .container .navigation div a::after {
+    content: "";
+    width: 0px;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: var(--green);
+    position: absolute;
+    transition: all 0.4s linear;
+}
+header .container .navigation div a:hover::after {
+    width: 100%;
+}
+header .container .navigation .dropdown-list .list {
+    position: absolute;
+    display: none;
+    background-color: var(--bg-color);
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    top: 68%;
+    margin-left: -50px;
+    margin-right: 10px;
+    padding: 10px;
+}
+header .container .navigation .dropdown-list:hover .list {
+    display: block;
+}
+header .container .navigation .dropdown-list .list ul {
+    list-style-type: none;
+    margin-bottom: 0;
+}
+header .container .navigation .dropdown-list .list ul li a {
+    margin: 20px 50px 20px 10px;
+    display: block;
+}
+.fa-angle-down {
+    margin-top: 9px;
+    padding-right: 5px;
+    color: #999;
+    font-size: 10px;
+}
+/* End header */
+/* Start Slider */
+.slider .carousel-indicators .dot {
+    background-color: var(--green);
+    margin: 0 10px;
+}
+
+.slider .carousel-inner::after{
+    content:"";
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background:rgba(0,0,0,0.6);
+}
+
+.slider .carousel-item .carousel-caption{
+    font-weight: 700;
+    line-height: 60px;
+    font-size: 30px;
+}
+.slider .carousel-item .carousel-caption > h1{
+    font-size: 62px;
+}
+/* End Slider */
+/* Start Introduction */
+#about {
+    padding: 3rem 0 !important;
+    box-shadow: 0 3px 9px rgb(0 0 0 / 5%);
+}
+
+#about .container .main-content {
+    margin: 0 auto;
+    max-width: 700px;
+    text-align: center;
+}
+
+#about .container .main-content .sub-title {
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 2em;
+    letter-spacing: 1px;
+    color: var(--about-us);
+}
+#about .container .main-content .main-title {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 48px;
+    text-transform: capitalize;
+    color: var(--black-title);
+}
+#about .container .main-content .my-text{
+    color: var(--text);
+    font-size: 20px;
+    margin: 1rem 0 !important;
+}
+#about .container .main-content .read{
+    text-decoration: none;
+    color: var(--black-title);
+    border-bottom: 2px solid var(--green);
+    font-size: 20px;
+    margin-top: 20px;
+    display: inline-block;
+    text-transform: capitalize;
+}
+#about .container .main-content .read:hover{
+    transition: all 0.4s linear;
+    color: var(--green);
+}
+/* End Introduction */
+/* Start features */
+.features {
+    background-color: var(--bg-light);
+    padding: 3rem 0 !important;
+}
+.features .container .main-content {
+    transition: margin 0.2s ease-in-out;
+}
+.features .container .main-content .grids-feature:hover {
+    margin-top: -20px;
+}
+.features .container .main-content .grids-feature {
+    margin-bottom: 30px;
+}
+.features .container .main-content .grids-feature .area-box{
+    padding: 40px 30px;
+    border-radius: var(--border-radius);
+    background-color: var(--bg-color);
+    position: relative; 
+}
+.features .container .main-content .grids-feature .area-box:hover {
+    transition: all 0.5s ease 0s;
+    background-color: var(--bg-light);
+}
+.features .container .main-content .grids-feature .area-box .icon{
+    color: var(--green);
+    font-size: 30px;
+    
+}
+.features .container .main-content .grids-feature .area-box:hover .icon{
+    animation: rotate 10s linear infinite;
+    width: fit-content;
+}
+@keyframes rotate{
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(1440deg);
+    }
+}
+.features .container .main-content .grids-feature .area-box .title-head {
+    color: var(--black-title);
+    text-decoration: none;
+    display: block;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 25px 0 15px 0;
+}
+.features .container .main-content .grids-feature .area-box .title-head:hover {
+    transition: all 0.4s linear;
+    color: var(--green);
+}
+.features .container .main-content .grids-feature .area-box p {
+    color: var(--text);
+    font-size: 1.2em;
+    line-height: 28px;
+}
+.features .container .main-content .grids-feature .area-box .read {
+    font-size: 20px;
+    text-decoration: none;
+    color: var(--black-title);
+    border-bottom: 2px solid var(--green);
+}
+.features .container .main-content .grids-feature .area-box .read:hover {
+    transition: all 0.4s linear;
+    color: var(--green);
+}
+/* End features */
+
+/* Start serevice */
+.service .content-with-photo .container .main-content .main-content-image img {
+    border-radius: var(--border-radius);
+}
+.service .content-with-photo .container .main-content .main-content-text .sub-title {
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 2em;
+    letter-spacing: 1px;
+    color: var(--about-us);
+}
+.service .content-with-photo .container .main-content .main-content-text .hny-title {
+    font-weight: 600;
+    text-transform: capitalize;
+    font-size: 40px;
+    line-height: 48px;
+    color: var(--black-title);
+}
+.service .content-with-photo .container .main-content .main-content-text p {
+    font-size: 20px;
+    line-height: 24.5px;
+    color: var(--text);
+    margin: 15px 0 35px 0;
+}
+.service .content-with-photo .container .main-content .main-content-text .fa {
+    color: var(--green);
+    margin-right: 12px;
+    background-color: var(--bg-light);
+    font-size: 10px;
+    padding: 8px;
+    border-radius: 50%;
+    display: inline-block;
+}
+.service .content-with-photo .container .main-content .main-content-text .list-certified li{
+    font-size: 20px;
+    line-height: 26px;
+    color: var(--black-title);
+    margin: 15px 0;
+    font-weight: 600;
+    list-style-type: none;
+}
+/* End serevice */
