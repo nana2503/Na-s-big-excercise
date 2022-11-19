@@ -1,7 +1,7 @@
 /* import google font */
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap');
 :root {
-    --green: #189a46;
+    --green: #189A46;
     --bg-color: #fff;
     --slider-bg-color: #0c0c0c;
     --about-us: #f53626;
@@ -14,13 +14,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Jost', sans-serif;
 }
 html {
     overflow-x: hidden;
 }
 body {
     overflow-x: hidden;
+    font-family: 'Jost', sans-serif;
 }
 /* Start header */
 header {
@@ -104,6 +104,9 @@ header .container .navigation .dropdown-list .list ul li a {
 }
 /* End header */
 /* Start Slider */
+.slider {
+    margin-top: -60px;
+}
 .slider .carousel-indicators .dot {
     background-color: var(--green);
     margin: 0 10px;
@@ -120,12 +123,12 @@ header .container .navigation .dropdown-list .list ul li a {
 }
 
 .slider .carousel-item .carousel-caption{
-    font-weight: 700;
     line-height: 60px;
-    font-size: 30px;
+    font-size:40px;
 }
 .slider .carousel-item .carousel-caption > h1{
     font-size: 62px;
+    font-weight: 700;
 }
 /* End Slider */
 /* Start Introduction */
@@ -287,3 +290,229 @@ header .container .navigation .dropdown-list .list ul li a {
     list-style-type: none;
 }
 /* End serevice */
+/* Start counting */
+.w31-stat {
+    background-color: var(--green);
+}
+.w31-stat .stats-info {
+    text-align: center;
+}
+.w31-stat .stats-info p{
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 600;
+    color: var(--bg-color);
+    margin-top: 30px;
+}
+.w31-stat .stats-info h4{
+    line-height: 25px;
+    text-transform: capitalize;
+    color: var(--bg-color);
+    font-weight: 400;
+    margin-top: 10px;
+    opacity: 0.8;
+}
+/* End counting */
+/* Start Plan */
+.pricing {
+    background-color: var(--bg-light);
+}
+.pricing .pricing-7-sec .container .pricing-package .pricing-gd-left {
+    background-color: var(--bg-color);
+    border-radius: 5px;
+    align-self: center;
+}
+.pricing .pricing-7-sec .container .pricing-package .pricing-gd-left .pricing-left{
+    text-align: center;
+    padding: 3.5em 2.5em;
+
+}
+.pricing .pricing-7-sec .container .heading h6{
+    margin-bottom: 10px;
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--about-us);
+
+}
+.pricing .pricing-7-sec .container .heading h3{
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 48px;
+    color: var(--black-title);
+    font-family: 'Jost';
+    letter-spacing: 1px;
+}
+.pricing .pricing-7-sec .container .pricing-package {
+    display: flex;
+}
+.pricing .pricing-7-sec .container .pricing-package .pricing-gd-left .pricing-left .pricing-left-top h6{
+    color: var(--black-title);
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+.pricing .pricing-7-sec .container .pricing-package .pricing-gd-left .pricing-left .pricing-left-top h4{
+    font-size: 40px;
+    line-height: 45px;
+    font-weight: 600;
+    margin: 15px 0 20px;
+    color: var(--green);
+}
+.pricing .pricing-7-sec .container .pricing-package .pricing-gd-left .pricing-left .pricing-left-top h4 label{
+    font-size: 25px;
+    vertical-align: text-top;
+}
+.pricing .pricing-7-sec .container .pricing-package .pricing-gd-left .pricing-left .pricing-left-top h4 span{
+    font-size: 16px;
+    line-height: 25px;
+    color: var(--text);
+    font-weight: 400;
+}
+.pricing .pricing-7-sec .container .pricing-package .pricing-gd-left .pricing-left .pricing-left-bottom{
+    padding-top: 1em;
+}
+.pricing .pricing-7-sec .container .pricing-package .pricing-gd-left .pricing-left .pricing-left-bottom .pricing-left-bottom-bottom ul.links li {
+    list-style-type: none;
+    color: var(--text);
+    margin-bottom: 5px;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: normal;
+    align-self: center;
+    padding-top: 6px;
+}
+.pricing .pricing-7-sec .container .pricing-package .pricing-gd-left .pricing-left .pricing-left-bottom .buy-button {
+    margin-top: 2em;
+}
+.pricing .pricing-7-sec .container .pricing-package .pricing-gd-left .pricing-left .pricing-left-bottom .buy-button .btn-primary{
+    padding: 12px 35px;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+    border-radius: var(--border-radius);
+    background-color: var(--green);
+    text-decoration: none;
+}
+.pricing .pricing-7-sec .container .pricing-package .pricing-gd-left .pricing-left .pricing-left-bottom .buy-button .btn-primary:hover{
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    background-color: #189A46;
+}
+.pricing .pricing-7-sec .container .pricing-package .pricing-gd-middle {
+    -webkit-transform: scale(1.03);
+    z-index: 1;
+    margin: 0;
+    box-shadow: 0 10px 30px 0 rgb(17 17 17 / 9%);
+    border-radius: 6px;
+    text-align: center;
+}
+.pricing .pricing-7-sec .container .pricing-package .pricing-gd-middle .box-pricing-standard-package .pricing-middle-top {
+    padding: 3em 2.5em 0.5em;
+    background-color: var(--green);
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.pricing .pricing-7-sec .container .pricing-package .pricing-gd-middle .box-pricing-standard-package .pricing-middle-top > h5{
+    font-size: 15px;
+    line-height: 20px;
+    color: var(--green);
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    font-weight: 700;
+    display: inline-block;
+    padding: 8px 20px;
+    background: #fff;
+    border-radius: var(--border-radius);
+}
+.pricing .pricing-7-sec .container .pricing-package .pricing-gd-middle .box-pricing-standard-package .pricing-middle-top > h6{
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: 600;
+    color: #fff;
+}
+.pricing .pricing-7-sec .container .pricing-package .pricing-gd-middle .box-pricing-standard-package .pricing-middle-top > h4{
+    color: #fff;
+    font-size: 40px;
+    margin: 15px 0 20px;
+    font-weight: 600;
+}
+.pricing .pricing-7-sec .container .pricing-package .pricing-gd-middle .box-pricing-standard-package .pricing-middle-top > h4 > label{
+    font-size: 25px;
+    vertical-align: text-top;
+}
+.pricing .pricing-7-sec .container .pricing-package .pricing-gd-middle .box-pricing-standard-package .pricing-middle-top > h4 > span{
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 400;
+}
+.pricing .pricing-7-sec .container .pricing-package .pricing-gd-middle .box-pricing-standard-package .pricing-middle-bottom {
+    padding: 2em 2.5em 3.5em;
+    background-color: var(--bg-color);
+}
+.pricing .pricing-7-sec .container .pricing-package .pricing-gd-middle .box-pricing-standard-package .pricing-middle-bottom ul.links{
+    min-height: 120px;
+    list-style: none;
+}
+.pricing .pricing-7-sec .container .pricing-package .pricing-gd-middle .box-pricing-standard-package .pricing-middle-bottom ul.links li{
+    margin-bottom: 5px;
+    color: var(--text);
+    font-size: 18px;
+    line-height: 28px;
+    align-self: center;
+    padding-top: 6px;
+}
+.pricing .pricing-7-sec .container .pricing-package .pricing-gd-middle .box-pricing-standard-package .pricing-middle-bottom .buy-button {
+    margin-top: 2em;
+}
+.pricing .pricing-7-sec .container .pricing-package .pricing-gd-middle .box-pricing-standard-package .pricing-middle-bottom .buy-button .btn-primary {
+    color: #fff;
+    background: var(--green);
+    padding: 12px 35px;
+    border-radius: var(--border-radius);
+    font-size: 18px;
+}
+.pricing .pricing-7-sec .container .pricing-package .pricing-gd-middle .box-pricing-standard-package .pricing-middle-bottom .buy-button > a{
+    text-decoration: none;
+}
+.pricing .pricing-7-sec .container .pricing-package .pricing-gd-middle .box-pricing-standard-package .pricing-middle-bottom .buy-button .btn-primary:hover {
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    background-color: #189A46;
+}
+/* End Plan */
+/* Start video popup */
+.video-popup .new-block {
+    display: grid;
+    align-items: center;
+    padding: 2rem 0;
+}
+.video-popup .new-block .middle-section{
+    max-width: 950px;
+    margin: 0 auto;
+}
+.video-popup .new-block .middle-section .sub-title{
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 2em;
+    letter-spacing: 1px;
+    color: var(--about-us);
+}
+.video-popup .new-block .middle-section .hny-title{
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 48px;
+    text-transform: capitalize;
+    font-family: 'Jost',sans-serif;
+    color: var(--black-title);
+}
+.video-popup .new-block .middle-section p {
+    font-size: 1.2em;
+    line-height: 28px;
+    color: var(--text);
+    font-family: 'Jost',sans-serif;
+    color: var(--text);
+}
+/* End video popup */
